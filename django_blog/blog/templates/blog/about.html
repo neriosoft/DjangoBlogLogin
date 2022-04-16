@@ -1,5 +1,12 @@
 {% extends "blog/base.html" %}
 
 {% block content %}
-        <h1>About Page</h1>
+        <div class="row">
+                <!-- Blog Entries Column -->
+           <div class="col-md-8 mt-3 left">
+             <h1>About Page</h1>
+           </div> 
+        
+        {% block sidebar %} {% include 'blog/sidebar.html' %} {% endblock sidebar %}
+        </div>
 {% endblock %}
